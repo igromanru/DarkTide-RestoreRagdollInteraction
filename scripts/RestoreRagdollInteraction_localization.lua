@@ -17,6 +17,6 @@ return {
     en = "Restores Ragdoll Interaction feature",
   },
   [SettingNames.EnableMod] = {
-    en = "Enable"
+    en = "Ragdoll Interaction"
   },
 }
