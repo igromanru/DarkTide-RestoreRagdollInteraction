@@ -1,5 +1,6 @@
 [font=Verdana][size=4][b]Description[/b][/size][/font]
 The mod implements the [b]Ragdoll Interaction[/b] feature, which allows you to hit enemy corpses. It exists in the Steam version but was removed in the Xbox Live/Gamepass version of the game at release.
+The mod works on its own and ignores regional restrictions.
 
 [font=Verdana][size=4][b]Requirements[/b][/size][/font]
 [size=3]- [url=https://www.nexusmods.com/warhammer40kdarktide/mods/19]Darktide Mod Loader[/url]
