@@ -2,7 +2,7 @@
     Author: Igromanru
     Date: 29.11.2024
     Mod Name: Restore Ragdoll Interaction
-	Version: 1.0.0
+	Version: 1.0.1
 ]]
 local mod = get_mod("RestoreRagdollInteraction")
 local SettingNames = mod:io_dofile("RestoreRagdollInteraction/scripts/setting_names")
@@ -78,9 +78,9 @@ end
 
 mod:hook_require("scripts/utilities/minion_death", function(instance)
 	mod:hook_origin(instance, "attack_ragdoll", function(ragdoll_unit, attack_direction, damage_profile, damage_type, hit_zone_name_or_nil, hit_world_position_or_nil, attacking_unit_or_nil, hit_actor_or_nil, herding_template_or_nil, critical_strike_or_nil)
-		if not mod:get(SettingNames.EnableMod) then return end
+		if DEDICATED_SERVER or not mod:get(SettingNames.EnableMod) then return end
 
-        local hit_zone_name = hit_zone_name_or_nil or "center_mass"
+		local hit_zone_name = hit_zone_name_or_nil or "center_mass"
 
 		_push_ragdoll(ragdoll_unit, hit_zone_name, attack_direction, damage_profile, herding_template_or_nil)
 		_gib(ragdoll_unit, hit_zone_name, attack_direction, damage_profile, critical_strike_or_nil)
@@ -92,5 +92,5 @@ mod:hook_require("scripts/utilities/minion_death", function(instance)
 		local damage_efficiency = damage_efficiencies.full
 
 		ImpactEffect.play(ragdoll_unit, hit_actor_or_nil, damage, damage_type, hit_zone_name, attack_result, hit_world_position_or_nil, hit_normal, attack_direction, attacking_unit_or_nil, IMPACT_FX_DATA, attack_was_stopped, nil, damage_efficiency, nil)
-    end)
+	end)
 end)
