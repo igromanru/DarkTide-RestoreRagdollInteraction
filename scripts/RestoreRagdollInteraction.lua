@@ -78,7 +78,7 @@ end
 
 mod:hook_require("scripts/utilities/minion_death", function(instance)
 	mod:hook_origin(instance, "attack_ragdoll", function(ragdoll_unit, attack_direction, damage_profile, damage_type, hit_zone_name_or_nil, hit_world_position_or_nil, attacking_unit_or_nil, hit_actor_or_nil, herding_template_or_nil, critical_strike_or_nil)
-		if DEDICATED_SERVER or not mod:get(SettingNames.EnableMod) then return end
+		if not mod:get(SettingNames.EnableMod) then return end
 
 		local hit_zone_name = hit_zone_name_or_nil or "center_mass"
 
