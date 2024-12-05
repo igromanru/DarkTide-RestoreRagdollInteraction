@@ -1,3 +1,7 @@
+[font=Verdana][size=5][b]The mod become obsolete[/b][/size][/font]
+[size=3]With [url=https://forums.fatsharkgames.com/t/hotfix-54-1-6-1-patch-notes/102597]Hotfix #54 (1.6.1)[/url] Fatshark restored the option for all Platforms.
+[b]Germany[/b] and [b]Austria[/b] have a restriction for the feature, but [url=https://www.nexusmods.com/warhammer40kdarktide/mods/435]Remove Region Restrictions[/url] mod should be able to unlock it for them.[/size]
+
 [font=Verdana][size=4][b]Description[/b][/size][/font]
 The mod implements the [b]Ragdoll Interaction[/b] feature, which allows you to hit enemy corpses. It exists in the Steam version but was removed in the Xbox Live/Gamepass version of the game at release.
 The mod works on its own and ignores regional restrictions.
